@@ -301,12 +301,9 @@ High-resolution visual diagrams are cataloged in [`docs/figures/`](./docs/figure
 DermInsightAI/
 ├── .gitattributes                         # Git LFS tracking configuration for model weights
 ├── .gitignore                             # Exclusion of caches, venvs, secrets, and raw images
+├── LICENSE                                # MIT Open Source License
 ├── requirements.txt                       # Python dependencies (PyTorch, torchvision, etc.)
 ├── EXPERIMENT_COMPARISON.csv              # Master tabular comparison of all 5 experiments
-├── PROJECT_INVENTORY.md                   # Full audit catalog of project files and checkpoints
-├── REPORT_CLAIM_AUDIT.md                  # Claim-by-claim verification matrix
-├── REPORT_REVISION_SUMMARY.md             # Summary of academic revisions and audit findings
-├── REPORT_README.md                       # Initial report generator documentation
 │
 ├── data/
 │   ├── README.md                          # Dataset documentation & acquisition guide
