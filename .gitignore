@@ -1,0 +1,68 @@
+# ==============================================================================
+# DermInsight AI - .gitignore
+# ==============================================================================
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Caches and temporary directories
+.pytest_cache/
+.ipynb_checkpoints/
+.cache/
+*.tmp
+*.temp
+*.bak
+*.swp
+*~
+
+# Environment variables & secrets
+.env
+.env.*
+*.env
+*.pem
+*.key
+*.cert
+*.id_rsa
+credentials.json
+secrets.json
+
+# Virtual environments
+venv/
+.venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# IDE and Editor configurations
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+.project
+.pydevproject
+.settings/
+
+# OS-generated files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+.DS_Store
+._*
+.Spotlight-V100
+.Trashes
+
+# Large Raw Datasets (ISIC 2020 raw image collection > 1.4 GB)
+# Permitted split and ground truth CSV files remain fully tracked.
+data/raw/train_images/
+*.jpg
+*.jpeg
+*.png
+!results/**
+!REPORT_FIGURES/**
+!REPORT_FIGURES_FINAL/**
+!docs/**

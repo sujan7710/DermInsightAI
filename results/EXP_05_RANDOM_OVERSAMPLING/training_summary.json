@@ -1,0 +1,10 @@
+{
+    "experiment": "EXP_05_RANDOM_OVERSAMPLING",
+    "method": "WeightedRandomSampler on training set only",
+    "model": "DenseNet201",
+    "best_epoch": 2,
+    "best_validation_roc_auc": 0.90821104638301,
+    "epochs_completed": 5,
+    "checkpoint_path": "/content/drive/MyDrive/DermInsightAI/models/EXP_05_RANDOM_OVERSAMPLING/densenet201_random_oversampling_best.pt",
+    "training_history_path": "/content/drive/MyDrive/DermInsightAI/results/EXP_05_RANDOM_OVERSAMPLING/training_history.json"
+}

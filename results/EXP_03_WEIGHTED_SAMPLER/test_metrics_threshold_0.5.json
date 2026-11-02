@@ -1,0 +1,18 @@
+{
+  "experiment": "Experiment 3 - WeightedRandomSampler",
+  "best_epoch": 2,
+  "best_validation_roc_auc": 0.9061884395377501,
+  "test_roc_auc": 0.821832112894622,
+  "test_average_precision": 0.12862665770126863,
+  "threshold": 0.5,
+  "accuracy": 0.9601626016260163,
+  "precision": 0.1404494382022472,
+  "sensitivity": 0.36764705882352944,
+  "specificity": 0.9684666117065128,
+  "f1": 0.2032520325203252,
+  "tn": 4699,
+  "fp": 153,
+  "fn": 43,
+  "tp": 25,
+  "test_samples": 4920
+}

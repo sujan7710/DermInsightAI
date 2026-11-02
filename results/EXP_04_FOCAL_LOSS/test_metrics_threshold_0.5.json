@@ -1,0 +1,17 @@
+{
+  "experiment": "Experiment 4 - DenseNet201 + Focal Loss",
+  "best_validation_roc_auc": 0.9181,
+  "test_roc_auc": 0.860121356869211,
+  "test_average_precision": 0.1402094807586301,
+  "threshold": 0.5,
+  "accuracy": 0.9806910569105691,
+  "precision": 0.2127659574468085,
+  "sensitivity": 0.14705882352941177,
+  "specificity": 0.9923742786479802,
+  "f1": 0.17391304347826086,
+  "tn": 4815,
+  "fp": 37,
+  "fn": 58,
+  "tp": 10,
+  "test_samples": 4920
+}

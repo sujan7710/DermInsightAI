@@ -1,0 +1,78 @@
+{
+  "architecture": "DenseNet201 pretrained on ImageNet, final binary classifier replaced with a single-output head",
+  "preprocessing": {
+    "resize": [
+      224,
+      224
+    ],
+    "normalization_mean": [
+      0.485,
+      0.456,
+      0.406
+    ],
+    "normalization_std": [
+      0.229,
+      0.224,
+      0.225
+    ],
+    "training_augmentation": [
+      "RandomHorizontalFlip",
+      "RandomRotation(15\u00b0)",
+      "ColorJitter(brightness=0.1, contrast=0.1, saturation=0.1, hue=0.05)"
+    ]
+  },
+  "loss_function": "Binary Cross-Entropy with Logits (BCEWithLogitsLoss) with positive class weight",
+  "class_imbalance_handling": {
+    "method": "Weighted binary loss using positive class weight = negative_count / positive_count",
+    "train_positive_count": 445,
+    "train_negative_count": 22342,
+    "positive_weight": 50.20674133300781
+  },
+  "hyperparameters": {
+    "learning_rate": 0.0001,
+    "batch_size": 32,
+    "epochs": 3,
+    "max_train_samples": null,
+    "max_val_samples": null,
+    "optimizer": "AdamW",
+    "weight_decay": 0.0001,
+    "device": "cpu",
+    "seed": 42
+  },
+  "data_splits": {
+    "train_size": 22787,
+    "val_size": 5419,
+    "test_size": 4920,
+    "train_positive_fraction": 0.01952867863255365,
+    "val_positive_fraction": 0.013102048348403764,
+    "test_positive_fraction": 0.013821138211382113
+  },
+  "validation_results": {
+    "accuracy": 0.4940025835024912,
+    "precision": 0.024563901744393022,
+    "recall": 0.971830985915493,
+    "specificity": 0.487658937920718,
+    "f1": 0.04791666666666667,
+    "roc_auc": 0.8471562358443857,
+    "average_precision": 0.0810971572638007
+  },
+  "test_results": {
+    "accuracy": 0.4258130081300813,
+    "precision": 0.021520305449496704,
+    "recall": 0.9117647058823529,
+    "specificity": 0.41900247320692496,
+    "f1": 0.0420481519159037,
+    "roc_auc": 0.799973328160613,
+    "average_precision": 0.06259309174357953
+  },
+  "train_loss_history": [
+    1.2839587948444398,
+    1.1410913268847145,
+    1.0845828138129334
+  ],
+  "val_loss_history": [
+    1.1112121801179238,
+    1.0719568922216547,
+    0.9989203866567751
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "experiment": "stage2b_weighted_bce",
+  "checkpoint": "/content/drive/MyDrive/DermInsightAI/models/densenet201_stage2b_weighted_bce.pt",
+  "best_epoch": 3,
+  "validation": {
+    "roc_auc": 0.9187638922540479,
+    "pr_auc": 0.17468552164412507,
+    "selected_threshold": 0.86,
+    "sensitivity": 0.30985915492957744,
+    "specificity": 0.9850411368735976,
+    "precision": 0.21568627450980393,
+    "f1": 0.2543352601156069,
+    "accuracy": 0.976194869902196,
+    "tn": 5268,
+    "fp": 80,
+    "fn": 49,
+    "tp": 22
+  },
+  "test": {
+    "roc_auc": 0.8298185102565347,
+    "pr_auc": 0.12882470446651925,
+    "threshold": 0.86,
+    "sensitivity": 0.22058823529411764,
+    "specificity": 0.9830997526793075,
+    "precision": 0.15463917525773196,
+    "f1": 0.18181818181818182,
+    "accuracy": 0.9725609756097561,
+    "tn": 4770,
+    "fp": 82,
+    "fn": 53,
+    "tp": 15
+  },
+  "test_samples": 4920,
+  "test_positive": 68,
+  "test_negative": 4852
+}

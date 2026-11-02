@@ -1,0 +1,21 @@
+{
+    "experiment": "EXP_05_RANDOM_OVERSAMPLING",
+    "best_epoch": 2,
+    "validation_roc_auc": 0.90821104638301,
+    "validation_average_precision": 0.21760970108937977,
+    "selected_threshold": 0.7296350002288818,
+    "test_roc_auc": 0.8707809999515057,
+    "test_average_precision": 0.10412159261760189,
+    "test_pr_auc": 0.09753838506671332,
+    "test_accuracy": 0.9715447154471545,
+    "test_precision": 0.1326530612244898,
+    "test_sensitivity": 0.19117647058823528,
+    "test_specificity": 0.9824814509480626,
+    "test_f1_score": 0.1566265060240964,
+    "true_negatives": 4767,
+    "false_positives": 85,
+    "false_negatives": 55,
+    "true_positives": 13,
+    "test_samples": 4920,
+    "threshold_selection": "Maximum F1 on validation set"
+}

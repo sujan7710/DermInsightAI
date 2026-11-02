@@ -1,0 +1,6 @@
+Experiment_ID,Experiment_Name,Architecture,Imbalance_Strategy,Batch_Size,Learning_Rate,Epochs_Completed,Best_Epoch,Val_ROC_AUC,Val_Average_Precision,Test_ROC_AUC,Test_Average_Precision,Test_PR_AUC,Threshold,Accuracy_Pct,Precision_Pct,Sensitivity_Pct,Specificity_Pct,F1_Score_Pct,TN,FP,FN,TP,Total_Test_Samples
+EXP_01,DenseNet201 Baseline,DenseNet201,Weighted BCE (Pos Weight = 50.21),32,0.0001,3,3,0.8472,0.0811,0.8000,0.0626,Not recorded,0.50,42.58,2.15,91.18,41.90,4.20,2033,2819,6,62,4920
+EXP_02,DenseNet201 Weighted BCE,DenseNet201,Weighted BCE (Pos Weight = 50.21),64,0.0001,6,3,0.9188,0.1747,0.8298,0.1288,0.1288,0.86,97.26,15.46,22.06,98.31,18.18,4770,82,53,15,4920
+EXP_03,DenseNet201 WeightedRandomSampler,DenseNet201,PyTorch WeightedRandomSampler,64,0.0001,5,2,0.9062,0.1894,0.8218,0.1286,Not recorded,0.50,96.02,14.04,36.76,96.85,20.33,4699,153,43,25,4920
+EXP_04,DenseNet201 Focal Loss,DenseNet201,Focal Loss (alpha=0.75; gamma=2.0),32,0.0001,5,5,0.9181,0.1800,0.8601,0.1402,Not recorded,0.50,98.07,21.28,14.71,99.24,17.39,4815,37,58,10,4920
+EXP_05,DenseNet201 Random Oversampling,DenseNet201,Random Oversampling (Train Only),32,0.0001,5,2,0.9082,0.2176,0.8708,0.1041,0.0975,0.7296,97.15,13.27,19.12,98.25,15.66,4767,85,55,13,4920
